@@ -1,4 +1,4 @@
-# Next.js Movie App
+# Fruteka Tech Challenge
 
 Una aplicación creada con Next.js, TypeScript y Styled Components para mostrar una lista de películas usando la API de The Movie Database (TMDB).
 
@@ -95,9 +95,9 @@ También asegúrate de tener instaladas las extensiones:
 - Optimizar imágenes con `next/image`
 - Incorporar diseño visual y adaptativo (mobile first y desktop) basado en los siguientes mockups:
     - Mobile:
-      ![Mobile Mockup](https://github.com/Fruteka/tech-challenge/assets/mockups/mobile_mockup.png)
+      ![Mobile Mockup](https://github.com/Fruteka/tech-challenge/assets/mobile_mockup.png)
     - Desktop:
-      ![Desktop Mockup](https://github.com/Fruteka/tech-challenge/assets/mockups/desktop_mockup.png)
+      ![Desktop Mockup](https://github.com/Fruteka/tech-challenge/assets/desktop_mockup.png)
 - Actualizar los test de MovieCard.test.tsx
 
 ## TODOS opcionales
