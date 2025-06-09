@@ -95,9 +95,9 @@ También asegúrate de tener instaladas las extensiones:
 - Optimizar imágenes con `next/image`
 - Incorporar diseño visual y adaptativo (mobile first y desktop) basado en los siguientes mockups:
     - Mobile:
-      ![Mobile Mockup](https://github.com/Fruteka/tech-challenge/assets/mobile_mockup.png)
+      ![Mobile Mockup](https://github.com/Fruteka/tech-challenge/blob/main/assets/mobile_mockup.png)
     - Desktop:
-      ![Desktop Mockup](https://github.com/Fruteka/tech-challenge/assets/desktop_mockup.png)
+      ![Desktop Mockup](https://github.com/Fruteka/tech-challenge/blob/main/assets/desktop_mockup.png)
 - Generar los test de MovieDetailPage.test.tsx
 
 ## TODOS opcionales
