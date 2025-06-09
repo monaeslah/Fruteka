@@ -98,7 +98,7 @@ También asegúrate de tener instaladas las extensiones:
       ![Mobile Mockup](https://github.com/Fruteka/tech-challenge/assets/mobile_mockup.png)
     - Desktop:
       ![Desktop Mockup](https://github.com/Fruteka/tech-challenge/assets/desktop_mockup.png)
-- Actualizar los test de MovieCard.test.tsx
+- Generar los test de MovieDetailPage.test.tsx
 
 ## TODOS opcionales
 
