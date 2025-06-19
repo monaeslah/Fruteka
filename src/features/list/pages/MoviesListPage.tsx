@@ -12,6 +12,9 @@ export default function MoviesListPage({ movies }: { movies: Movie[] }) {
     );
     return (
         <>
+            <h1 style={{ fontSize: '2rem', marginBottom: '1rem', textAlign: 'center' }}>
+                Browse Movies
+            </h1>
             <input
                 type="text"
                 placeholder="Search movies..."
@@ -24,6 +27,7 @@ export default function MoviesListPage({ movies }: { movies: Movie[] }) {
                     maxWidth: '400px',
                 }}
             />
+
             <div
                 style={{
                     display: 'grid',
@@ -32,9 +36,21 @@ export default function MoviesListPage({ movies }: { movies: Movie[] }) {
                     padding: '1rem',
                 }}
             >
-                {filteredMovies.map((movie) => (
-                    <MovieCard key={movie.id} movie={movie} />
-                ))}
+                {filteredMovies.length > 0 ? (
+                    <div
+                        style={{
+                            display: 'grid',
+                            gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+                            gap: '1.5rem',
+                        }}
+                    >
+                        {filteredMovies.map((movie) => (
+                            <MovieCard key={movie.id} movie={movie} />
+                        ))}
+                    </div>
+                ) : (
+                    <p style={{ textAlign: 'center', color: '#777' }}>No movies found.</p>
+                )}
             </div>
         </>
     );
