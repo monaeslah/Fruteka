@@ -1,11 +1,10 @@
-// features/detail/components/MovieMeta/index.tsx
-import { Container, MetaGroup, Tag, Rating } from './styles';
+import { Container, MetaGroup, Tag, Rating, IMDbTag } from './styles';
 
 interface MovieMetaProps {
     releaseDate: string;
     runtime: number;
     rating: number;
-    certification?: string; // مثلاً "PG-13"
+    certification?: string;
 }
 
 export const MovieMeta = ({ releaseDate, runtime, rating, certification }: MovieMetaProps) => {
@@ -20,7 +19,11 @@ export const MovieMeta = ({ releaseDate, runtime, rating, certification }: Movie
                 {certification && <Tag>{certification}</Tag>}
                 <Tag>{`${hours}h ${minutes}m`}</Tag>
             </MetaGroup>
-            <Rating>{rating.toFixed(1)}</Rating>
+            <Rating>
+                {' '}
+                <IMDbTag>IMDb</IMDbTag>
+                {rating.toFixed(1)}
+            </Rating>
         </Container>
     );
 };

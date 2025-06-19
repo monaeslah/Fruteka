@@ -1,6 +1,10 @@
 import MovieCard from '../components/MovieCard';
-
-export default function MoviesListPage({ movies }: { movies: any[] }) {
+interface Movie {
+    id: number;
+    title: string;
+    poster_path: string;
+}
+export default function MoviesListPage({ movies }: { movies: Movie[] }) {
     return (
         <div
             style={{

@@ -5,10 +5,13 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+    color: #898989;
     background-color: rgb(0, 0, 0);
-
     @media (min-width: 768px) {
         flex-direction: row;
+        align-items: flex-start;
+        color: rgb(255, 255, 255);
+        height: 100vh;
     }
 `;
 
@@ -21,6 +24,9 @@ export const PosterWrapper = styled.div`
     border-radius: 10px;
     overflow: hidden;
     margin: 0 auto;
+    @media (min-width: 768px) {
+        margin: 0;
+    }
 `;
 
 export const Content = styled.div`
@@ -38,6 +44,9 @@ export const Title = styled.h1`
 export const Overview = styled.p`
     font-size: 1rem;
     line-height: 1.6;
+    @media (min-width: 768px) {
+        color: rgb(255, 255, 255);
+    }
 `;
 export const BackLink = styled.button`
     all: unset;
