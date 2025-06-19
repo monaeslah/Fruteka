@@ -28,30 +28,21 @@ export default function MoviesListPage({ movies }: { movies: Movie[] }) {
                 }}
             />
 
-            <div
-                style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-                    gap: '1rem',
-                    padding: '1rem',
-                }}
-            >
-                {filteredMovies.length > 0 ? (
-                    <div
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-                            gap: '1.5rem',
-                        }}
-                    >
-                        {filteredMovies.map((movie) => (
-                            <MovieCard key={movie.id} movie={movie} />
-                        ))}
-                    </div>
-                ) : (
-                    <p style={{ textAlign: 'center', color: '#777' }}>No movies found.</p>
-                )}
-            </div>
+            {filteredMovies.length > 0 ? (
+                <div
+                    style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+                        gap: '1.5rem',
+                    }}
+                >
+                    {filteredMovies.map((movie) => (
+                        <MovieCard key={movie.id} movie={movie} />
+                    ))}
+                </div>
+            ) : (
+                <p style={{ textAlign: 'center', color: '#777' }}>No movies found.</p>
+            )}
         </>
     );
 }
