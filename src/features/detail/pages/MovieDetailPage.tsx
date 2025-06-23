@@ -9,12 +9,13 @@ interface MovieDetailProps {
     title: string;
     poster_path: string;
     release_date: string;
+    backdrop_path: string;
     runtime: number;
     vote_average: number;
 }
 export default function MovieDetailPage({ movie }: { movie: MovieDetailProps }) {
     const router = useRouter();
-
+    console.log('MovieDetailPage', movie);
     const handleBack = () => {
         router.back();
     };
@@ -23,7 +24,7 @@ export default function MovieDetailPage({ movie }: { movie: MovieDetailProps }) 
         <Container>
             <PosterWrapper>
                 <Image
-                    src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                    src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                     alt={movie.title}
                     layout="fill"
                     objectFit="cover"
