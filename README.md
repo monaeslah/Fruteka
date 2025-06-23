@@ -15,7 +15,7 @@ A responsive movie browsing app built with **Next.js**, **TypeScript**, and **St
 - **Movie Detail Page** with:
   - Poster image, title, overview, and metadata
   - Back navigation
-  - Static meta section (director, stars, genres)
+  - Dynamic meta section (director, stars, genres) fetched from API
 - API integration with TMDB
 
 ### 💄 Styling
@@ -66,9 +66,9 @@ The desktop mockup for the movie detail page was unclear.
 
 Due to lack of a Figma or visual design source, I placed metadata (director, stars) below the overview instead of over the poster.
 
-🧾 Hardcoded data:
 
-Some fields like director, stars, and genres were hardcoded because they were not available in the API response.
+🧾 Metadata source:
+Director, stars, and genres are now fetched dynamically using additional API data (e.g., /credits and /genres endpoints).
 
 🎨 Inline styles were only used in the **Movies List Page** to speed up development and focus on functionality first. Other parts of the app use styled-components with SSR.
 
