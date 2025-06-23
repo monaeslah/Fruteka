@@ -1,17 +1,25 @@
 import styled from 'styled-components';
-
-export const Container = styled.div`
+interface ContainerProps {
+    background: string;
+}
+export const Container = styled.div<ContainerProps>`
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    padding: 0;
     gap: 1rem;
-    padding: 1rem;
-    color: #898989;
     background-color: rgb(0, 0, 0);
     @media (min-width: 768px) {
-        flex-direction: row;
-        align-items: flex-start;
-        color: rgb(255, 255, 255);
-        height: 100vh;
+    background-image: url(${(props) => props.background});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    align-items: flex-start;
+    color: rgb(255, 255, 255);
+ height: 100vh;
+ overflow: hidden;
+
     }
 `;
 
@@ -30,11 +38,27 @@ export const PosterWrapper = styled.div`
 `;
 
 export const Content = styled.div`
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     flex: 1;
+    justify-content: space-between;
     padding: 0 1rem;
     color: #898989;
 `;
-
+export const MainContent= styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width:40%;
+    margin-left: auto;
+    margin-top: 7rem;
+        margin-right: 3rem;
+    @media (min-width: 768px) {
+        align-items: flex-start;
+        gap: 2rem;
+    }
+        `
 export const Title = styled.h1`
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
