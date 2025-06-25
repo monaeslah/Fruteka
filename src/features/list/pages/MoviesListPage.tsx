@@ -40,7 +40,7 @@ export default function MoviesListPage({ movies }: { movies: Movie[] }) {
                     style={{
                         padding: '0.75rem 1rem',
                         fontSize: '1rem',
-                        width: '100%',
+                        width: '90%',
                         maxWidth: '400px',
                         borderRadius: '8px',
                         border: '1px solid #ccc',

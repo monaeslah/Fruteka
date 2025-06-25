@@ -6,7 +6,7 @@ export const Container = styled.div<ContainerProps>`
     display: flex;
     flex-direction: column;
     width: 100vw;
-    padding: 0;
+    padding: 1rem;
     gap: 1rem;
     background-color: rgb(0, 0, 0);
     @media (min-width: 768px) {
@@ -26,9 +26,10 @@ export const Container = styled.div<ContainerProps>`
 export const PosterWrapper = styled.div`
     flex: 0 0 auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     position: relative;
     aspect-ratio: 2 / 3;
+    
     border-radius: 10px;
     overflow: hidden;
     margin: 0 auto;
@@ -50,11 +51,11 @@ export const MainContent= styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width:40%;
-    margin-left: auto;
-    margin-top: 7rem;
-        margin-right: 3rem;
+    margin: 2rem auto 0 auto;
+    padding: 1rem;
     @media (min-width: 768px) {
+        width:40%;
+   margin: 7rem 0 0 auto; 
         align-items: flex-start;
         gap: 2rem;
     }

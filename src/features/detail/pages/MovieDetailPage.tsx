@@ -44,6 +44,8 @@ export default function MovieDetailPage({ movie }: { movie: MovieDetailProps }) 
     const handleBack = () => {
         router.back();
     };
+    console.log('isMobile:', isMobile);
+    console.log('backdrop path:', movie.backdrop_path);
     const backdropUrl = !isMobile
         ? `https://image.tmdb.org/t/p/original${movie.backdrop_path}`
         : '';
@@ -55,7 +57,7 @@ export default function MovieDetailPage({ movie }: { movie: MovieDetailProps }) 
                         src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                         alt={movie.title}
                         fill
-                        style={{ objectFit: 'contain', objectPosition: 'top', zIndex: -1 }}
+                        style={{ objectFit: 'cover' }}
                     />
                 </PosterWrapper>
             )}
